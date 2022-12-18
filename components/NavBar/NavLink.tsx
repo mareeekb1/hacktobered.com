@@ -12,7 +12,7 @@ interface DesktopNavLinkProps extends HTMLChakraProps<"a"> {
   active?: boolean;
 }
 
-const DesktopNavLink = (props: DesktopNavLinkProps) => {
+export const DesktopNavLink = (props: DesktopNavLinkProps) => {
   const { active, ...rest } = props;
   return (
     <chakra.a
@@ -36,7 +36,7 @@ interface MobileNavLinkProps {
   href?: string;
 }
 
-const MobileNavLink = (props: MobileNavLinkProps) => {
+export const MobileNavLink = (props: MobileNavLinkProps) => {
   const { icon, children, href, onClick } = props;
   return (
     <Flex

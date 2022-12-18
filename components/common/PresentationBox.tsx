@@ -3,13 +3,85 @@ import {
   Button,
   Heading,
   Img,
-  Stack,
   Text,
   useColorModeValue as mode,
 } from "@chakra-ui/react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import NextLink from "next/link";
 import React from "react";
+
+interface TTextBoxSectionProps {
+  testID: string;
+  title: string;
+  description: string;
+  right?: boolean;
+}
+
+export const TextBoxSection = (props: TTextBoxSectionProps) => {
+  return (
+    <Box
+      data-testid={props.testID}
+      flex={1}
+      style={
+        props.right
+          ? {
+              display: "flex",
+              alignItems: "flex-end",
+              flexDirection: "column",
+              width: "100%",
+            }
+          : {}
+      }
+    >
+      <Heading
+        as="h1"
+        size="xl"
+        color={mode("blue.600", "blue.300")}
+        mt="8"
+        fontWeight="extrabold"
+        letterSpacing="tight"
+      >
+        {props.title}
+      </Heading>
+      <Text
+        w={{ lg: "50%" }}
+        color={mode("gray.600", "gray.400")}
+        mt="4"
+        fontSize="lg"
+        fontWeight="medium"
+        textAlign={props.right ? "end" : "start"}
+      >
+        {props.description}
+      </Text>
+    </Box>
+  );
+};
+export const ButtonSection = () => {
+  return (
+    <Box
+      data-testid="buttonSection"
+      mt={20}
+      style={{ display: "flex", justifyContent: "center", width: "100%" }}
+    >
+      <NextLink href="/profile" passHref>
+        <Button
+          data-testid="button"
+          variant="ghost"
+          as="a"
+          rightIcon={<BsArrowRightCircleFill fontWeight={"bold"} />}
+          size="lg"
+          minW="210px"
+          colorScheme="blue"
+          height="14"
+          px="8"
+          fontSize={32}
+        >
+          Try it!
+        </Button>
+      </NextLink>
+    </Box>
+  );
+};
 
 const PresentationBox = () => {
   const sections = {
@@ -33,7 +105,10 @@ const PresentationBox = () => {
   return (
     <Box>
       {/* IMG section */}
-      <Box style={{ display: "flex", justifyContent: "center" }}>
+      <Box
+        data-testid="imgBox1"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <Img
           textAlign={"center"}
           w={{ lg: "30%", md: "60%", sm: "50%" }}
@@ -45,111 +120,24 @@ const PresentationBox = () => {
           alt="Hacktobered hero image"
         />
       </Box>
-      {/* TEXT 1 section */}
-      <Box
-        flex={1}
-        style={{
-          display: "flex",
-          alignItems: "flex-end",
-          flexDirection: "column",
-          width: "100%",
-        }}
-      >
-        <Heading
-          as="h1"
-          size="xl"
-          color={mode("blue.600", "blue.300")}
-          mt="8"
-          fontWeight="extrabold"
-          letterSpacing="tight"
-        >
-          {sections[1].title}
-        </Heading>
-        <Text
-          w={{ lg: "50%" }}
-          color={mode("gray.600", "gray.400")}
-          mt="4"
-          fontSize="lg"
-          fontWeight="medium"
-          textAlign={"end"}
-        >
-          {sections[1].description}
-        </Text>
-      </Box>
-      {/* TEXT 2 section */}
-      <Box>
-        <Heading
-          as="h1"
-          size="xl"
-          color={mode("blue.600", "blue.300")}
-          mt="8"
-          fontWeight="extrabold"
-          letterSpacing="tight"
-        >
-          {sections[2].title}
-        </Heading>
-        <Text
-          w={{ lg: "50%" }}
-          color={mode("gray.600", "gray.400")}
-          mt="4"
-          fontSize="lg"
-          fontWeight="medium"
-        >
-          {sections[2].description}
-        </Text>
-      </Box>
-      {/* TEXT 3 section */}
-      <Box
-        flex={1}
-        style={{
-          display: "flex",
-          alignItems: "flex-end",
-          flexDirection: "column",
-          width: "100%",
-        }}
-      >
-        <Heading
-          as="h1"
-          size="xl"
-          color={mode("blue.600", "blue.300")}
-          mt="8"
-          fontWeight="extrabold"
-          letterSpacing="tight"
-        >
-          {sections[3].title}
-        </Heading>
-        <Text
-          w={{ lg: "50%" }}
-          color={mode("gray.600", "gray.400")}
-          mt="4"
-          fontSize="lg"
-          fontWeight="medium"
-          textAlign={"end"}
-        >
-          {sections[3].description}
-        </Text>
-      </Box>
-      {/* Button section */}
-      <Box
-        mt={20}
-        style={{ display: "flex", justifyContent: "center", width: "100%" }}
-      >
-        <NextLink href="/profile" passHref>
-          <Button
-            variant="ghost"
-            as="a"
-            rightIcon={<BsArrowRightCircleFill fontWeight={"bold"} />}
-            size="lg"
-            minW="210px"
-            colorScheme="blue"
-            height="14"
-            px="8"
-            fontSize={32}
-          >
-            Try it!
-          </Button>
-        </NextLink>
-      </Box>
+      <TextBoxSection
+        description={sections[1].description}
+        title={sections[1].title}
+        testID="textBox1"
+        right
+      />
+      <TextBoxSection
+        description={sections[2].description}
+        title={sections[2].title}
+        testID="textBox2"
+      />
+      <TextBoxSection
+        description={sections[3].description}
+        title={sections[3].title}
+        testID="textBox3"
+        right
+      />
+      <ButtonSection />
     </Box>
   );
 };

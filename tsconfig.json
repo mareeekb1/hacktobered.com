@@ -13,8 +13,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/styles/*": ["styles/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts"],
+  "exclude": ["node_modules"],
+  "jest": {
+    "moduleNameMapper": {
+      "^@App/(.*)$": "<rootDir>/src/$1",
+      "^lib/(.*)$": "<rootDir>/common/$1"
+    }
+  }
 }

@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="css-0"
+>
+  <div
+    className="css-0"
+    data-testid="imgBox1"
+    style={
+      {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <img
+      alt="Hacktobered hero image"
+      className="chakra-image css-14icgpu"
+      src="hcktbrd.png"
+    />
+  </div>
+  <div
+    className="css-1rr4qq7"
+    data-testid="textBox1"
+    style={
+      {
+        "alignItems": "flex-end",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "100%",
+      }
+    }
+  >
+    <h1
+      className="chakra-heading css-18l4zzf"
+    >
+      Get proud!
+    </h1>
+    <p
+      className="chakra-text css-1mvrx8s"
+    >
+      Now you can share your achievements with others via Instagram stories, Whatsapp status or Twitter. Don't do it manualy.
+    </p>
+  </div>
+  <div
+    className="css-1rr4qq7"
+    data-testid="textBox2"
+    style={{}}
+  >
+    <h1
+      className="chakra-heading css-18l4zzf"
+    >
+      Why should you use it?
+    </h1>
+    <p
+      className="chakra-text css-s6jlv9"
+    >
+      You can easily share your PR's and show them to the world just in few steps.
+    </p>
+  </div>
+  <div
+    className="css-1rr4qq7"
+    data-testid="textBox3"
+    style={
+      {
+        "alignItems": "flex-end",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "100%",
+      }
+    }
+  >
+    <h1
+      className="chakra-heading css-18l4zzf"
+    >
+      How it works?
+    </h1>
+    <p
+      className="chakra-text css-1mvrx8s"
+    >
+      So EASY! Sign in via your GitHub and see overview or share your PR's.
+    </p>
+  </div>
+  <div
+    className="css-1xaekgw"
+    data-testid="buttonSection"
+    style={
+      {
+        "display": "flex",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <a
+      className="chakra-button css-200v6p"
+      data-testid="button"
+      href="/profile"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Try it!
+      <span
+        className="chakra-button__icon css-1hzyiq5"
+      >
+        <svg
+          aria-hidden={true}
+          fill="currentColor"
+          focusable={false}
+          fontWeight="bold"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+          />
+        </svg>
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Button funcionality Should trigger click event 1`] = `null`;

@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="css-1kdr2i9"
+>
+  <div
+    className="css-mz9qt7"
+  >
+    <div
+      className="chakra-stack css-j7qwjs"
+    />
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  className="css-1kdr2i9"
+>
+  <div
+    className="css-mz9qt7"
+  >
+    <div
+      className="chakra-stack css-j7qwjs"
+    />
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  className="chakra-stack css-qzkxek"
+>
+  <div
+    className="chakra-stack css-1dxtmen"
+  >
+    <p
+      className="chakra-text css-1c5b18p"
+    >
+      <svg
+        className="chakra-icon css-1t88n5d"
+        fill="currentColor"
+        focusable={false}
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+        />
+      </svg>
+      String
+    </p>
+    <div
+      className="css-504jus"
+    >
+      <p
+        className="chakra-text css-1mrk1dy"
+      >
+        String
+      </p>
+    </div>
+    <div
+      className="css-gg4vpm"
+    >
+      <a
+        className="chakra-button css-1uplmbl"
+        href="/String"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
+          className="chakra-button__icon css-1wh2kri"
+        >
+          <svg
+            aria-hidden={true}
+            fill="currentColor"
+            focusable={false}
+            fontWeight="bold"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+        </span>
+        View Repo
+      </a>
+      <a
+        className="chakra-button css-1uplmbl"
+        href="/repo/String"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
+          className="chakra-button__icon css-1wh2kri"
+        >
+          <svg
+            aria-hidden={true}
+            fill="currentColor"
+            focusable={false}
+            fontWeight="bold"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6a2 2 0 01-2-2V10c0-1.11.89-2 2-2h3v2H6v11h12V10h-3V8h3a2 2 0 012 2z"
+            />
+          </svg>
+        </span>
+        Share
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Owned repos testing snapshots Owned repos section 1`] = `
+[
+  <hr
+    aria-orientation="horizontal"
+    className="chakra-divider css-454pvo"
+  />,
+  <div
+    className="css-1kdr2i9"
+  >
+    <div
+      className="css-mz9qt7"
+    >
+      <div
+        className="chakra-stack css-j7qwjs"
+      />
+    </div>
+  </div>,
+  <div
+    className="css-1l4vzbi"
+  >
+    No Repositories found yet! BTW, today is a great day to create one.
+  </div>,
+]
+`;

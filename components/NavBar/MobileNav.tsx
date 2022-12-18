@@ -41,7 +41,7 @@ const variants: Variants = {
   },
 };
 
-const Backdrop = ({ show }: { show?: boolean }) => (
+export const Backdrop = ({ show }: { show?: boolean }) => (
   <Portal>
     <motion.div
       initial={false}
@@ -62,7 +62,9 @@ const Backdrop = ({ show }: { show?: boolean }) => (
   </Portal>
 );
 
-const Transition = (props: HTMLMotionProps<"div"> & { in?: boolean }) => {
+export const Transition = (
+  props: HTMLMotionProps<"div"> & { in?: boolean }
+) => {
   const { in: inProp, ...rest } = props;
   return (
     <motion.div
